@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content Type" content="text/html; charset=utf-8">
+	<title>CodeIgniter uniga</title>
+	<link rel="stylesheet" type="text/css" href="text/css" href="<?php echo base_url();bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<h1 class="page-header text-center"> Belajar FrameWork CI [uniga]</h1>
+	<div class="row">
+		<div class="col-sm-offset-2">
+			<a href="<?php echo base_url();?>index.php/users/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Add New </a><br><br>
+			<table class=" table table-bordered table-stripped">
+				<thead>
+					<tr>
+						<th>ID</th>
+						
+						<th>Nama</th>
+
+						<th>Nim</th>
+
+						<th>JURUSAN</th>
+
+						<th>ALAMAT</th>
+
+						<th>Action</th>
+					</tr>
+				</thead>
+			</tbody>
+			<?php
+			foreach($users as $user){
+			?>
+			<tr>
+				<td>6</td>
+
+				<td>Rahma Yani</td>
+
+				<td>19510029</td>
+
+				<td>SI</td>
+
+				<td>Malang</td>
+
+				<td><a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $user->id; ?>"></td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+</body>
+</html>
